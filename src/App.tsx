@@ -4,6 +4,7 @@ import NewCat from "./NewCat";
 import CatItem from "./CatItem";
 import Cat, {Categories} from "./Cat";
 import FilterButton from "./FilterButton";
+import "./myStyle.css"
 
 function App() {
     const [toggleNew, setToggleNew] = useState(true);
