@@ -3,3 +3,7 @@ body {
     color: #FFFFFF;
     background-color: #303030;
 }
+span {
+    color: #707070;
+    font-style: italic;
+}

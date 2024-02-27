@@ -44,6 +44,7 @@ function App() {
     }
 
     function ListCats() {
+        if(catListState.length !== 0) {
         return (
             <div>
                 {catListState.filter((item) => {
@@ -60,10 +61,16 @@ function App() {
                         handleDelete={handleDelete}
                     />)}
             </div>
-        );
+        )}
+        else{
+            return (
+            <div>
+                <br/><span>No cats :'(</span><br/><br/>
+            </div>)
+        }
     }
 
-  return (
+    return (
       <div>
       {toggleNew ? (
               <div>
